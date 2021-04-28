@@ -3,3 +3,99 @@
     margin: 0%;
     box-sizing: border-box;
 }
+body{
+    text-align: center;
+}
+#rightwheel,#leftwheel{
+    animation: wheel 2s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+#bikeman{
+    animation: bike 1s ease-in-out infinite alternate;
+    transform-origin: bottom;
+}
+#hat{
+    animation: hat 1s ease-in-out infinite alternate;
+    transform-origin: bottom;
+}
+
+@keyframes wheel{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes bike{
+    from{
+        transform: rotateX(0deg);
+    }
+    to{
+        transform: rotateX(20deg);
+    }
+}
+@keyframes hat{
+    from{
+        transform: translateY(-2%);
+    }
+    to{
+        transform: translateY(5%);
+    }
+}
+#svg1{
+    margin-right: 65%;
+    padding-top: 50%;
+}
+#main{
+    
+    float: left;
+}
+
+/*******************************form********************************************/
+
+#form{
+    width: 400px;
+    height: 500px;
+    float: right;
+    margin-top: 50px;
+    text-align: justify;
+    margin-right: 20%;
+    margin-left: 10%;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0,0, 0.2),0 6px 20px 0 rgba(0, 0,0, 0.2);
+}
+#content{
+    margin-top: 10%;
+}
+
+input{
+    margin-top: 50px;
+    margin-left: 100px;
+    padding-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0,0, 0.2),0 6px 20px 0 rgba(0, 0,0, 0.2);
+    outline-width: 0;
+    border: white;
+}
+button{
+    margin-top: 50px;
+    margin-left: 150px;
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0,0, 0.2),0 6px 20px 0 rgba(0, 0,0, 0.2);
+    background: rgba(43, 255, 0, 0.685);
+    border: white;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    background: yellow;
+    border-radius: 50%;
+    margin-left: 150px;
+    margin-top: 70px;
+}
