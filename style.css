@@ -39,7 +39,7 @@ body{
 }
 @keyframes hat{
     from{
-        transform: translateY(-2%);
+        transform: translateY(-3%);
     }
     to{
         transform: translateY(5%);
